@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>José Saramago</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class= "header-top section-show">
+    <div class="container">
+
+      <h1><a href="index.html">José Saramago</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>Poeta, Jornalista, Romancista, Dramaturgo e Argumentista</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link" href="biografia parte.html">Biografia</a></li>
+          <li><a class="nav-link" href="vida parte.html">Vida</a></li>
+          <li><a class="nav-link" href="obras parte.html">Obras</a></li>
+          <li><a class="nav-link" href="premios parte.html">Prémios</a></li>
+          <li><a class="nav-link active" href="contacto parte.html">Contacto</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://pt-pt.facebook.com/fjsaramago" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/fjsaramago/?hl=pt" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+ 
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact section-show">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contacto</h2>
+        <p>Contacta-me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>Número</h3>
+            <p>+351 123 456 789</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>gabriel.tiago.nogueira@gmail.com</p>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <form method="post" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" id="body" rows="5" placeholder="Menssagem" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="sent-message">A tua mensagem foi enviada!</div>
+        </div>
+        <div class="text-center"><button type="submit" onclick="enviarmsg()">Enviar</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+<script>
+  function enviarmsg() {
+    var name = document.getElementById("name").value
+    var email = document.getElementById("email").value
+    var subject = document.getElementById("subject").value
+    var body = document.getElementById("body").value
+
+    document.location.href = "mailto:gabriel.tiago.nogueira@gmail.com?subject="
+    + encodeURIComponent(subject)
+    + "&body=" + encodeURIComponent(body + "\n\nEnvidado por: " + name + ", (" + email + ")")
+  }
+</script>
+  
+</body>
+
+</html>
